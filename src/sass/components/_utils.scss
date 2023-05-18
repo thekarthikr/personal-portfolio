@@ -33,6 +33,10 @@
 .section {
   padding-left: clamp(1.1rem, 0.78rem + 7.74vw, 12rem);
   padding-right: 0.7rem;
+
+  h2 {
+    font-weight: 600;
+  }
 }
 
 .w {

@@ -3,16 +3,16 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
 import houseMaketplace from "../assets/housemarketplace.jpg";
 
-export { default as htmlLogo } from "../assets/html5.svg";
-export { default as cssLogo } from "../assets/css3.svg";
-export { default as scssLogo } from "../assets/scss.svg";
-export { default as jsLogo } from "../assets/js.svg";
-export { default as tailwindcssLogo } from "../assets/tailwindcss.svg";
-export { default as reactLogo } from "../assets/react.svg";
-export { default as reactQueriesLogo } from "../assets/react-queries.svg";
-export { default as rapidapiLogo } from "../assets/rapidapi.svg";
-export { default as gitLogo } from "../assets/git.svg";
-export { default as materialuiLogo } from "../assets/materialui.svg";
+import htmlLogo from "../assets/html5.svg";
+import cssLogo from "../assets/css3.svg";
+import scssLogo from "../assets/scss.svg";
+import jsLogo from "../assets/js.svg";
+import tailwindcssLogo from "../assets/tailwindcss.svg";
+import reactLogo from "../assets/react.svg";
+import reactQueryLogo from "../assets/react-queries.svg";
+import rapidapiLogo from "../assets/rapidapi.svg";
+import gitLogo from "../assets/git.svg";
+import materialuiLogo from "../assets/materialui.svg";
 
 export const navLinks = [
   {
@@ -61,6 +61,59 @@ export const contactLinks = [
     link: "ig.me/m/thekarthikr",
     icon: <BsMessenger />,
     name: "Messenger",
+  },
+];
+
+export const techStacks = [
+  {
+    name: "HTML5",
+    img: htmlLogo,
+    className: "html5",
+  },
+  {
+    name: "CSS3",
+    img: cssLogo,
+    className: "css3",
+  },
+  {
+    name: "SCSS",
+    img: scssLogo,
+    className: "scss",
+  },
+  {
+    name: "Tailwind CSs",
+    img: tailwindcssLogo,
+    className: "tailwindcss",
+  },
+  {
+    name: "Javascript",
+    img: jsLogo,
+    className: "javascript",
+  },
+  {
+    name: "React Js",
+    img: reactLogo,
+    className: "reactjs",
+  },
+  {
+    name: "React Query",
+    img: reactQueryLogo,
+    className: "react-query",
+  },
+  {
+    name: "Material UI",
+    img: materialuiLogo,
+    className: "material-ui",
+  },
+  {
+    name: "Git",
+    img: gitLogo,
+    className: "git",
+  },
+  {
+    name: "Rapid API",
+    img: rapidapiLogo,
+    className: "rapid-api",
   },
 ];
 

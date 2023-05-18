@@ -1,0 +1,54 @@
+.tech-stacks {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    opacity: 0.7;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.html5 {
+  background-color: rgba(227, 79, 38, 0.3);
+}
+.css3 {
+  background-color: rgba(27, 115, 186, 0.3);
+}
+.scss {
+  background-color: rgba(207, 100, 154, 0.3);
+}
+.tailwindcss {
+  background-color: rgba(6, 182, 212, 0.3);
+}
+//   &--bootstrap {
+//     background-color: rgba(121, 82, 179, 0.3);
+//   }
+.javascript {
+  background-color: rgba(240, 219, 79, 0.3);
+}
+.reactjs {
+  background-color: rgba(97, 218, 251, 0.3);
+}
+
+.react-query {
+  background-color: rgba(255, 65, 84, 0.3);
+}
+.material-ui {
+  background: rgba(0, 176, 255, 0.3);
+}
+.rapid-api {
+  background-color: rgba(29, 67, 113, 0.3);
+}
+.git {
+  background-color: rgba(222, 76, 54, 0.3);
+}
