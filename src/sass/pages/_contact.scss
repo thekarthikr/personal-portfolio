@@ -7,22 +7,6 @@
   flex-direction: column;
   gap: 5rem;
 
-  &:after {
-    content: "";
-    position: absolute;
-    inset: 50% 20vw 0;
-    max-height: 40vh;
-    transform: translateY(-50%);
-    background: linear-gradient(
-      to bottom right,
-      hsla(210, 100%, 65%, 0.623) 2.34%,
-      hsla(270, 91%, 71%, 0.648) 100.78%
-    );
-    z-index: -1;
-    border-radius: 50%;
-    filter: blur(10rem);
-  }
-
   &__wrapper {
     @include mixin.flexCenter;
     gap: 4rem;
@@ -67,13 +51,13 @@
     font-weight: 500;
     display: inline-block;
     margin-bottom: 1rem;
-    font-family: "Rubik";
+    font-family: variable.$secondaryFont;
   }
 
   &__input {
     display: block;
     background-color: transparent;
-    padding: 0.8rem;
+    padding: 1.3rem;
     font-size: 1.6rem;
     font-family: variable.$baseFont;
     border-radius: 5px;

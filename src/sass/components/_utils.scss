@@ -18,11 +18,12 @@
   color: white;
   font-family: variable.$baseFont;
   text-align: left;
-  background: linear-gradient(
-    120deg,
-    hsla(210, 100%, 65%, 0.457) 2.34%,
-    hsla(270, 91%, 71%, 0.332) 100.78%
-  );
+  // background: linear-gradient(
+  //   120deg,
+  //   hsla(210, 100%, 65%, 0.457) 2.34%,
+  //   hsla(270, 91%, 71%, 0.332) 100.78%
+  // );
+  background-color: hsla(210, 100%, 65%, 0.457);
   width: fit-content;
   border-radius: 5px;
   padding: 0.6rem;
@@ -49,4 +50,10 @@
   @include mixin.min(variable.$sm) {
     width: 80%;
   }
+}
+
+.text-warning {
+  color: #dc3545;
+  font-family: variable.$secondaryFont;
+  letter-spacing: 0.5px;
 }

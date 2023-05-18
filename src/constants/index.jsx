@@ -21,7 +21,7 @@ export const navLinks = [
   },
   {
     id: 2,
-    name: "About me",
+    name: "About",
   },
   {
     id: 3,
@@ -58,7 +58,7 @@ export const contactLinks = [
     name: "Send Mail",
   },
   {
-    link: "ig.me/m/thekarthikr",
+    link: "https://ig.me/m/thekarthikr",
     icon: <BsMessenger />,
     name: "Messenger",
   },
