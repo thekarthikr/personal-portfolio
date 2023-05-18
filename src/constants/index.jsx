@@ -37,7 +37,7 @@ export const socialLinks = [
   {
     link: "https://github.com/thekarthikr",
     icon: <BsGithub />,
-    Name: "Github",
+    name: "Github",
   },
   {
     link: "https://linkedin.com/in/thekarthikr",
