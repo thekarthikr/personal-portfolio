@@ -1,0 +1,48 @@
+@use "../base/variables" as variable;
+@use "../base/mixins" as mixin;
+
+.text-gradient {
+  background: variable.$linearGradient;
+  @include mixin.textGradient;
+}
+
+.text-gradient-light {
+  background: variable.$linearGradientLight;
+  @include mixin.textGradient;
+  font-size: variable.$headingSize;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: variable.$baseFont;
+  text-align: left;
+  background: linear-gradient(
+    120deg,
+    hsla(210, 100%, 65%, 0.457) 2.34%,
+    hsla(270, 91%, 71%, 0.332) 100.78%
+  );
+  width: fit-content;
+  border-radius: 5px;
+  padding: 0.6rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.section {
+  padding-left: clamp(1.1rem, 0.78rem + 7.74vw, 12rem);
+  padding-right: 0.7rem;
+}
+
+.w {
+  width: 100%;
+
+  @include mixin.min(variable.$xs) {
+    width: 90%;
+  }
+
+  @include mixin.min(variable.$sm) {
+    width: 80%;
+  }
+}

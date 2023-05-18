@@ -1,0 +1,13 @@
+@use "../base/variables" as variable;
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0;
+
+  p {
+    color: hsl(0, 0%, 37%);
+    font-size: variable.$textSize;
+  }
+}

@@ -1,0 +1,18 @@
+@use "../base/variables" as variable;
+@use "../base/mixins" as mixin;
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: variable.$mb5;
+
+  &__skill {
+    &-title {
+      margin: 2rem 0;
+    }
+  }
+
+  &__heading {
+    font-size: variable.$headingSize;
+  }
+}

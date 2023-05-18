@@ -1,0 +1,33 @@
+$colorBg: hsl(240, 24%, 8%);
+$colorGray: hsl(0, 0%, 77%);
+$colorWhite: hsl(0, 0%, 100%);
+$colorBlack: hsl(0, 0%, 0%);
+
+$linearGradient: linear-gradient(
+  90deg,
+  hsl(210, 100%, 65%) 2.34%,
+  hsl(270, 90%, 71%) 100.78%
+);
+$linearGradientLight: linear-gradient(
+  90deg,
+  hsl(210, 100%, 79%) 2.34%,
+  hsl(270, 90%, 77%) 100.78%
+);
+$baseFont: "Satoshi", sans-serif;
+$secondaryFont: "General Sans", sans-serif;
+
+// 576px
+$xs: 36em;
+// 768px
+$sm: 48em;
+// 992px
+$md: 62em;
+// 1024px
+$lg: 64em;
+// 1200px
+$xl: 75em;
+
+$headingSize: clamp(2.95rem, 3vw + 1.25rem, 3.6rem);
+$subheadingSize: clamp(1.8rem, 2vw + 1.25rem, 2.4rem);
+$textSize: clamp(1.8rem, 1.21vw + 1.25rem, 2rem);
+$mb5: 5rem;
