@@ -9,6 +9,9 @@
   &__skill {
     &-title {
       margin: 2rem 0;
+      font-size: variable.$textSize;
+      font-weight: 600;
+      font-family: variable.$secondaryFont;
     }
   }
 

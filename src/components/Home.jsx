@@ -3,7 +3,7 @@ const Home = () => (
     <div className='hero__content'>
       <h1 className='hero__heading'>
         Helping nice <br />
-        people
+        people {""}
         <span className='text-gradient'>build</span> <br />
         nice products
       </h1>

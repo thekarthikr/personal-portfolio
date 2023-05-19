@@ -30,16 +30,19 @@ const NavBar = () => {
             </svg>
           </button>
           <ul className='nav__list'>
-            <li class='nav__item'>
+            <li className='nav__item'>
               <a href='#Projects'>Projects</a>
             </li>
-            <li class='nav__item'>
+            <li className='nav__item'>
               <a href='#Contact'>Contact</a>
             </li>
             {"|"}
             {socialLinks.map(({ link, icon }) => (
               <li key={link} className='nav__item'>
-                <a href={link}> {icon} </a>
+                <a target='_blank' href={link}>
+                  {" "}
+                  {icon}{" "}
+                </a>
               </li>
             ))}
           </ul>
@@ -54,7 +57,7 @@ const NavBar = () => {
               onClick={() => setToggle((prev) => !prev)}
               className='nav-menu__item'
             >
-              <a class='nav-menu__link' href={`#${name}`}>
+              <a className='nav-menu__link' href={`#${name}`}>
                 {name}
               </a>
             </li>
@@ -69,9 +72,9 @@ const NavBar = () => {
             >
               <a
                 href={link}
-                class='nav-menu__social-link'
+                className='nav-menu__social-link'
                 target='_blank'
-                aria-label='Click here to view my Github Account'
+                aria-label={`Click here to view my ${name} Account`}
               >
                 {" "}
                 {icon}{" "}
