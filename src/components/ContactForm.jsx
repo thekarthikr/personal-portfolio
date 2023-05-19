@@ -20,6 +20,10 @@ const ContactForm = () => {
         value: 3,
         message: "Name must have at least 3 characters",
       },
+      pattern: {
+        value: /[A-Za-z]/,
+        message: "Please enter valid characters",
+      },
     },
     email: {
       required: "Email is required",
@@ -35,6 +39,10 @@ const ContactForm = () => {
         value: 15,
         message: "Message must have at least 15 characters",
       },
+      pattern: {
+        value: /[A-Za-z]/,
+        message: "Please enter valid characters",
+      },
     },
   };
 
@@ -47,11 +55,24 @@ const ContactForm = () => {
         import.meta.env.VITE_API_KEY
       );
 
-      toast.promise(emailJs, {
-        loading: "Sending..",
-        success: "Messagge has been sent successfully",
-        error: "Please try again later",
-      });
+      toast.promise(
+        emailJs,
+        {
+          loading: "Sending..",
+          success: "Message has been sent successfully",
+          error: "Please try again later",
+        },
+        {
+          position: "bottom-right",
+          duration: 4000,
+          style: {
+            backgroundColor: "hsl(240, 24%, 15%)",
+            color: "hsl(0, 0%, 100%)",
+            marginBottom: "4rem",
+            marginRight: "2rem",
+          },
+        }
+      );
     }
 
     reset();

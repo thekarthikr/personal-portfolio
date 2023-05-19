@@ -44,14 +44,7 @@ const Contact = () => {
             </ul>
           </div>
         </div>
-        <div className='toast-wrapper'>
-          <span className='toast'>
-            {" "}
-            <i className='bx bx-x'></i>
-          </span>
-        </div>
       </section>
-      ;
     </>
   );
 };
