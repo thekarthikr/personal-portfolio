@@ -53,7 +53,10 @@
 }
 
 .text-warning {
-  color: #dc3545;
+  background: linear-gradient(to right, #ff7070, #ffa6a6);
+  -webkit-background-clip: text;
+  background-clip: text;
   font-family: variable.$secondaryFont;
   letter-spacing: 0.5px;
+  -webkit-text-fill-color: transparent;
 }
