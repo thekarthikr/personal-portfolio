@@ -7,7 +7,7 @@ const About = () => {
         <span className='text-gradient-light'>About me</span>
       </h2>
       <p className='about__info'>
-        Hi there , I'm Karthik. Jr.Frontend Developer. I love to create
+        Hi there , I'm Karthik. Junior Frontend Developer. I love to create
         beautiful and performant products using web technologies with delightful
         user experience. Maintain high coding standards and practices and
         exercise quality control on all aspects of web development. Interested
