@@ -63,13 +63,11 @@ const ContactForm = () => {
           error: "Please try again later",
         },
         {
-          position: "bottom-right",
+          position: "top-center",
           duration: 4000,
           style: {
             backgroundColor: "hsl(240, 24%, 15%)",
             color: "hsl(0, 0%, 100%)",
-            marginBottom: "4rem",
-            marginRight: "2rem",
           },
         }
       );
