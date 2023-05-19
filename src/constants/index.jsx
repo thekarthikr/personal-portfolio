@@ -1,8 +1,10 @@
 import { BsGithub, BsInstagram, BsMessenger } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
-import houseMaketplace from "../assets/housemarketplace.jpg";
+import { RiReactjsFill } from "react-icons/ri";
+import { SiFirebase, SiLeaflet, SiCss3 } from "react-icons/si";
 
+import houseMaketplace from "../assets/housemarketplace.jpg";
 import htmlLogo from "../assets/html5.svg";
 import cssLogo from "../assets/css3.svg";
 import scssLogo from "../assets/scss.svg";
@@ -121,9 +123,10 @@ export const project = [
   {
     title: "House Marketplace",
     description:
-      "This is a web application built using React JS and Firebase. It is designed to help users find houses for sale or rent, and to allow users to list their properties for others to find. Users can login and sign up using Google or their email and password. They can then create, edit, and delete their property listings, as well as view the location of their property on a Leaflet map.",
+      "A React JS and Firebase web app for property search and listing. Users can login/sign up, manage listings, and view locations on a Leaflet map. Simplifies finding and listing houses.",
     liveLink: "https://house-marketplaceapp.vercel.app",
     githubLink: "https://github.com/thekarthikr/house-marketplace",
     img: houseMaketplace,
+    tech: [<RiReactjsFill />, <SiFirebase />, <SiLeaflet />, <SiCss3 />],
   },
 ];
