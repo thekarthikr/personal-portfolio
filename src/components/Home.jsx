@@ -1,3 +1,7 @@
+import { Link } from "react-scroll";
+import { GrSend } from "react-icons/gr";
+import ContactButton from "./ContactButton";
+
 const Home = () => (
   <main id='Home' className='hero section'>
     <div className='hero__content'>
@@ -8,6 +12,10 @@ const Home = () => (
         nice products
       </h1>
       <p className='hero__sub'>Building Better Web Experiences</p>
+
+      <Link className='hero__btn' to='Contact' offset={-150}>
+        <ContactButton />
+      </Link>
     </div>
   </main>
 );
