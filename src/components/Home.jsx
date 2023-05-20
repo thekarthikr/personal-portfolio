@@ -13,7 +13,7 @@ const Home = () => (
       </h1>
       <p className='hero__sub'>Building Better Web Experiences</p>
 
-      <Link className='hero__btn' to='Contact' offset={-150}>
+      <Link style={{ width: "fit-content" }} to='Contact' offset={-150}>
         <ContactButton />
       </Link>
     </div>
