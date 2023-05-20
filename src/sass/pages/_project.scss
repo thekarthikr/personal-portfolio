@@ -89,3 +89,15 @@
     }
   }
 }
+
+.load-more {
+  background-color: hsla(231, 17%, 16%, 0.5);
+  color: variable.$colorGray;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.3rem;
+  font-size: 1.6rem;
+  font-family: variable.$baseFont;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -5,6 +5,7 @@ import { BiMailSend } from "react-icons/bi";
 import houseMaketplace from "../assets/housemarketplace.jpg";
 import articleSummarizer from "../assets/ai.jpeg";
 import youtubeClone from "../assets/youtube-mockup.jpg";
+import movieapp from "../assets/movieapp.png";
 import htmlLogo from "../assets/html5.svg";
 import cssLogo from "../assets/css3.svg";
 import scssLogo from "../assets/scss.svg";
@@ -156,5 +157,15 @@ export const project = [
     githubLink: "https://github.com/thekarthikr/youtube-clone",
     img: youtubeClone,
     tech: ["Reactjs", "Rapid API", "Material UI"],
+  },
+  {
+    id: 4,
+    title: "Flixx Web Application",
+    description:
+      "Flixx is a movie website that allows users to browse popular movies and TV shows, search for their favorite titles, and view details about each movie or TV show. Users can also see cast details and their movies.",
+    liveLink: "https://flixxmovieapp.netlify.app/",
+    githubLink: "https://github.com/thekarthikr/flixx-movie-app",
+    img: movieapp,
+    tech: ["Vanilla Js", "TMDB API", "CSS"],
   },
 ];
