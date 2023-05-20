@@ -11,7 +11,7 @@ const Contact = () => {
             <span className='text-gradient-light'>Let's Get In Touch</span>
           </h2>
           <p className='contact__intro w'>
-            Whether you have a new project in mind, a freelance inquiry, or just
+            Whether you have a new project in mind, a freelance inquiry or just
             want to chat over a cup of tea, I'd love to hear from you. You can
             reach me by email or through the contact form below. Let's connect
             and see how we can work together.
@@ -33,11 +33,11 @@ const Contact = () => {
             <p className='contact__email'>
               You can also reach me by directly click down below
             </p>
-            <ul style={{ display: "flex", gap: "1rem" }}>
+            <ul className='contact-link'>
               {contactLinks.map(({ link, icon, name }) => (
-                <li title={name} key={name}>
-                  <a target='_blank' style={{ fontSize: "2rem" }} href={link}>
-                    {icon}
+                <li>
+                  <a target='_blank' href={link}>
+                    {icon} Send via {name}
                   </a>
                 </li>
               ))}

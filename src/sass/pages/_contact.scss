@@ -29,6 +29,20 @@
   &__email-id {
     color: hsla(0, 0%, 94%, 0.615);
   }
+  &-link {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: hsla(231, 17%, 16%, 0.2);
+      padding: 0.5rem 0.7rem;
+      border-radius: 5px;
+    }
+  }
 }
 
 .form {

@@ -60,7 +60,7 @@ export const contactLinks = [
   {
     link: "mailto:info@karthikwebdev.me",
     icon: <BiMailSend />,
-    name: "Send Mail",
+    name: "Mail",
   },
   {
     link: "https://ig.me/m/thekarthikr",
