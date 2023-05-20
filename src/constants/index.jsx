@@ -1,10 +1,10 @@
 import { BsGithub, BsInstagram, BsMessenger } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
-import { RiReactjsFill } from "react-icons/ri";
-import { SiFirebase, SiLeaflet, SiCss3 } from "react-icons/si";
 
 import houseMaketplace from "../assets/housemarketplace.jpg";
+import articleSummarizer from "../assets/ai.jpeg";
+import youtubeClone from "../assets/youtube-mockup.jpg";
 import htmlLogo from "../assets/html5.svg";
 import cssLogo from "../assets/css3.svg";
 import scssLogo from "../assets/scss.svg";
@@ -15,6 +15,8 @@ import reactQueryLogo from "../assets/react-queries.svg";
 import rapidapiLogo from "../assets/rapidapi.svg";
 import gitLogo from "../assets/git.svg";
 import materialuiLogo from "../assets/materialui.svg";
+import firebaseLogo from "../assets/firebase.svg";
+import chakrauiLogo from "../assets/chakraui.svg";
 
 export const navLinks = [
   {
@@ -103,6 +105,11 @@ export const techStacks = [
     className: "react-query",
   },
   {
+    name: "Chakra UI",
+    img: chakrauiLogo,
+    className: "chakra-ui",
+  },
+  {
     name: "Material UI",
     img: materialuiLogo,
     className: "material-ui",
@@ -121,12 +128,33 @@ export const techStacks = [
 
 export const project = [
   {
+    id: 1,
     title: "House Marketplace",
     description:
       "A React JS and Firebase web app for property search and listing. Users can login/sign up, manage listings, and view locations on a Leaflet map. Simplifies finding and listing houses.",
     liveLink: "https://house-marketplaceapp.vercel.app",
     githubLink: "https://github.com/thekarthikr/house-marketplace",
     img: houseMaketplace,
-    tech: [<RiReactjsFill />, <SiFirebase />, <SiLeaflet />, <SiCss3 />],
+    tech: ["Reactjs", "Firebase", "Leaflet Map", "CSS"],
+  },
+  {
+    id: 2,
+    title: "AI Article Summarizer",
+    description:
+      "Summarize articles by pasting their URLs into the input field. The summarized article is stored in the local storage of the browser for future reference.",
+    liveLink: "https://article-summarizer-app.netlify.app/",
+    githubLink: "https://github.com/thekarthikr/article-summarizer",
+    img: articleSummarizer,
+    tech: ["Reactjs", "Rapid API", "Tailwindcss"],
+  },
+  {
+    id: 3,
+    title: "Youtube Clone",
+    description:
+      "The YouTube Clone React app offers a user-friendly web interface for searching, watching, and browsing videos. It includes video details, channel information, and comment viewing, emulating the core functionalities of YouTube.",
+    liveLink: "https://youtube-clone-reactappp.netlify.app/",
+    githubLink: "https://github.com/thekarthikr/youtube-clone",
+    img: youtubeClone,
+    tech: ["Reactjs", "Rapid API", "Material UI"],
   },
 ];

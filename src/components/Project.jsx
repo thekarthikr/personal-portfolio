@@ -16,8 +16,8 @@ const Project = () => {
       </div>
       <div className='project__wrapper'>
         {project.map(
-          ({ title, description, liveLink, githubLink, img, tech }) => (
-            <div className='project__content'>
+          ({ id, title, description, liveLink, githubLink, img, tech }) => (
+            <section key={id} className='project__content'>
               <img className='project__img' src={img} alt={title} />
 
               <div className='project__info'>
@@ -25,10 +25,8 @@ const Project = () => {
                 <p className='project__description'>{description}</p>
 
                 <div className='project__tech'>
-                  {tech.map((item) => (
-                    <div key={item} className='project__tech-item'>
-                      {item}
-                    </div>
+                  {tech.map((item, index) => (
+                    <p key={index}> {item} </p>
                   ))}
                 </div>
 
@@ -38,11 +36,11 @@ const Project = () => {
                   </a>
 
                   <a href={githubLink} target='_blank'>
-                    <BsGithub /> Github
+                    <BsGithub /> View in detail
                   </a>
                 </div>
               </div>
-            </div>
+            </section>
           )
         )}
       </div>

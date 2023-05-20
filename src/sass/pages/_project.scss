@@ -29,15 +29,15 @@
       rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
     @include mixin.min(variable.$xs) {
-      width: 60%;
+      width: 68%;
+    }
+    @include mixin.min(variable.$sm) {
+      width: 55%;
     }
 
-    @include mixin.min(variable.$sm) {
-      flex-direction: row;
-      width: 90%;
-    }
     @include mixin.min(variable.$md) {
-      width: 70%;
+      flex-direction: row;
+      width: 75%;
     }
   }
 
@@ -45,9 +45,8 @@
     border-radius: 10px;
     object-fit: cover;
 
-    @include mixin.min(variable.$sm) {
-      width: 50%;
-      height: 250px;
+    @include mixin.min(variable.$md) {
+      width: 380px;
     }
   }
 
@@ -57,7 +56,7 @@
 
   &__info {
     display: flex;
-    gap: 1rem;
+    gap: 1.3rem;
     flex-direction: column;
   }
 
@@ -80,8 +79,11 @@
     align-items: center;
     gap: 1.3rem;
 
-    &-item {
-      font-size: 2rem;
+    p {
+      font-size: 1.4rem;
+      background-color: hsla(231, 17%, 16%, 0.5);
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
       color: variable.$colorGray;
     }
   }
