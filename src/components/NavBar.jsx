@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import { navLinks, socialLinks } from "../constants";
 
 const NavBar = () => {
@@ -31,10 +32,14 @@ const NavBar = () => {
           </button>
           <ul className='nav__list'>
             <li className='nav__item'>
-              <a href='#Projects'>Projects</a>
+              <Link to='Projects' activeClass='active' offset={-150}>
+                Projects
+              </Link>
             </li>
             <li className='nav__item'>
-              <a href='#Contact'>Contact</a>
+              <Link to='Contact' offset={-150}>
+                Contact
+              </Link>
             </li>
             {"|"}
             {socialLinks.map(({ link, icon }) => (
@@ -52,14 +57,15 @@ const NavBar = () => {
       <div className={toggle ? "nav-menu show-menu" : "nav-menu"} id='nav-menu'>
         <ul className='nav-menu__list'>
           {navLinks.map(({ id, name }) => (
-            <li
-              key={id}
-              onClick={() => setToggle((prev) => !prev)}
-              className='nav-menu__item'
-            >
-              <a className='nav-menu__link' href={`#${name}`}>
+            <li key={id} className='nav-menu__item'>
+              <Link
+                to={name}
+                offset={-150}
+                className='nav-menu__link'
+                onClick={() => setToggle((prev) => !prev)}
+              >
                 {name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
