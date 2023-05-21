@@ -22,16 +22,16 @@ This is a personal portfolio website built using React.js and SCSS. The website 
 git clone https://github.com/thekarthikr/personal-portfolio.git
 
 2. Navigate to the project directory
-cd personal-portfolio
+`cd personal-portfolio`
 
 3. Install dependencies
-npm install
+`npm install`
 
 4. Start the development server
-npm run dev
+`npm run dev`
 
 5. Open your browser and visit
-http://localhost:5173/
+`http://localhost:5173/`
 
 
 ## Configuration
