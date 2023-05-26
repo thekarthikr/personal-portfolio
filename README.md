@@ -30,7 +30,13 @@ git clone https://github.com/thekarthikr/personal-portfolio.git
 4. Start the development server
 `npm run dev`
 
-5. Open your browser and visit
+5. Add .env file
+ ``javascript
+   VITE_API_KEY = 'YOUR APLI KEY'
+   VITE_TEMPLATE_ID= 'YOUR TEMPLATE ID'
+   VITE_SERVICE_ID= 'YOUR SERVICE ID'
+
+6. Open your browser and visit
 `http://localhost:5173/`
 
 
