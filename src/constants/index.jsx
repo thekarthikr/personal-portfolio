@@ -100,11 +100,11 @@ export const techStacks = [
     img: reactLogo,
     className: "reactjs",
   },
-  {
-    name: "React Query",
-    img: reactQueryLogo,
-    className: "react-query",
-  },
+  // {
+  //   name: "React Query",
+  //   img: reactQueryLogo,
+  //   className: "react-query",
+  // },
   {
     name: "Chakra UI",
     img: chakrauiLogo,
